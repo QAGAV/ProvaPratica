@@ -9,7 +9,7 @@ ${URL}           https://playwright.dev/
 *** Test Cases ***
 Visitar pagina e elemento
     Abrir o Navegador
-    Acessar  a Página       ${URL}
+    Acessar a Página       ${URL}
     Verificar URL Esperada    ${URL}
     Validar Elemento    //*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a
     Fechar o Navegador

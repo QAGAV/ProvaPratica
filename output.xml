@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.1 on win32)" generated="20230627 01:24:16.887" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.9.1 on win32)" generated="20230627 03:11:39.665" rpa="false" schemaversion="2">
 <suite id="s1" name="Meu Desafio" source="C:\Users\gusta\Desktop\Desafio\Meu_Desafio.robot">
-<test id="s1-t1" name="Visitar Página">
+<test id="s1-t1" name="Visitar pagina e elemento">
 <kw name="Abrir o Navegador">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230627 01:24:17.155" level="INFO">Opening browser 'chrome' to base url 'https://playwright.dev/'.</msg>
-<status status="PASS" starttime="20230627 01:24:17.154" endtime="20230627 01:24:20.953"/>
+<msg timestamp="20230627 03:11:39.817" level="INFO">Opening browser 'chrome' to base url 'https://playwright.dev/'.</msg>
+<status status="PASS" starttime="20230627 03:11:39.816" endtime="20230627 03:11:41.393"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:17.153" endtime="20230627 01:24:20.953"/>
+<status status="PASS" starttime="20230627 03:11:39.816" endtime="20230627 03:11:41.393"/>
 </kw>
 <kw name="Acessar a Página">
 <arg>${URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230627 01:24:20.955" level="INFO">Opening url 'https://playwright.dev/'</msg>
-<status status="PASS" starttime="20230627 01:24:20.954" endtime="20230627 01:24:21.067"/>
+<msg timestamp="20230627 03:11:41.395" level="INFO">Opening url 'https://playwright.dev/'</msg>
+<status status="PASS" starttime="20230627 03:11:41.394" endtime="20230627 03:11:41.558"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230627 01:24:32.040" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230627 01:24:21.067" endtime="20230627 01:24:32.040"/>
+<msg timestamp="20230627 03:11:41.729" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230627 03:11:41.559" endtime="20230627 03:11:41.729"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:20.954" endtime="20230627 01:24:32.041"/>
+<status status="PASS" starttime="20230627 03:11:41.394" endtime="20230627 03:11:41.729"/>
 </kw>
 <kw name="Verificar URL Esperada">
 <arg>${URL}</arg>
 <kw name="Get Location" library="SeleniumLibrary">
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<msg timestamp="20230627 01:24:32.055" level="INFO">${current_url} = https://playwright.dev/</msg>
-<status status="PASS" starttime="20230627 01:24:32.043" endtime="20230627 01:24:32.056"/>
+<msg timestamp="20230627 03:11:41.741" level="INFO">${current_url} = https://playwright.dev/</msg>
+<status status="PASS" starttime="20230627 03:11:41.731" endtime="20230627 03:11:41.741"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${current_url}</arg>
 <arg>${url_esperada}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20230627 01:24:32.056" endtime="20230627 01:24:32.058"/>
+<status status="PASS" starttime="20230627 03:11:41.741" endtime="20230627 03:11:41.741"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>O teste passou! A URL esperada (${url_esperada}) é igual à URL atual (${current_url}).</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230627 01:24:32.059" level="INFO">O teste passou! A URL esperada (https://playwright.dev/) é igual à URL atual (https://playwright.dev/).</msg>
-<status status="PASS" starttime="20230627 01:24:32.058" endtime="20230627 01:24:32.059"/>
+<msg timestamp="20230627 03:11:41.742" level="INFO">O teste passou! A URL esperada (https://playwright.dev/) é igual à URL atual (https://playwright.dev/).</msg>
+<status status="PASS" starttime="20230627 03:11:41.742" endtime="20230627 03:11:41.742"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230627 01:24:32.138" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230627 01:24:32.059" endtime="20230627 01:24:32.139"/>
+<msg timestamp="20230627 03:11:41.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230627 03:11:41.742" endtime="20230627 03:11:41.824"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:32.041" endtime="20230627 01:24:32.139"/>
+<status status="PASS" starttime="20230627 03:11:41.730" endtime="20230627 03:11:41.824"/>
 </kw>
 <kw name="Validar Elemento">
 <arg>//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a</arg>
@@ -60,50 +60,44 @@
 <arg>xpath=${xpath_selector}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230627 01:24:32.140" endtime="20230627 01:24:32.192"/>
+<status status="PASS" starttime="20230627 03:11:41.827" endtime="20230627 03:11:41.856"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath=${xpath_selector}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230627 01:24:32.224" level="INFO">Element 'xpath=//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a' is displayed.</msg>
-<status status="PASS" starttime="20230627 01:24:32.192" endtime="20230627 01:24:32.224"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=${xpath_selector}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230627 01:24:32.225" level="INFO">Clicking element 'xpath=//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a'.</msg>
-<status status="PASS" starttime="20230627 01:24:32.224" endtime="20230627 01:24:32.339"/>
+<msg timestamp="20230627 03:11:41.886" level="INFO">Element 'xpath=//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a' is displayed.</msg>
+<status status="PASS" starttime="20230627 03:11:41.856" endtime="20230627 03:11:41.886"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>O teste passou! O elemento (${xpath_selector}) foi encontrado na página.</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230627 01:24:32.340" level="INFO">O teste passou! O elemento (//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a) foi encontrado na página.</msg>
-<status status="PASS" starttime="20230627 01:24:32.340" endtime="20230627 01:24:32.340"/>
+<msg timestamp="20230627 03:11:41.887" level="INFO">O teste passou! O elemento (//*[@id="docusaurus_skipToContent_fallback"]/header/div/div/a) foi encontrado na página.</msg>
+<status status="PASS" starttime="20230627 03:11:41.887" endtime="20230627 03:11:41.887"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230627 01:24:33.462" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230627 01:24:32.340" endtime="20230627 01:24:33.463"/>
+<msg timestamp="20230627 03:11:41.956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230627 03:11:41.887" endtime="20230627 03:11:41.956"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:32.139" endtime="20230627 01:24:33.463"/>
+<status status="PASS" starttime="20230627 03:11:41.825" endtime="20230627 03:11:41.956"/>
 </kw>
 <kw name="Fechar o Navegador">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230627 01:24:33.463" endtime="20230627 01:24:35.688"/>
+<status status="PASS" starttime="20230627 03:11:41.957" endtime="20230627 03:11:44.114"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Fechou o navegador.</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230627 01:24:35.688" level="INFO">Fechou o navegador.</msg>
-<status status="PASS" starttime="20230627 01:24:35.688" endtime="20230627 01:24:35.688"/>
+<msg timestamp="20230627 03:11:44.115" level="INFO">Fechou o navegador.</msg>
+<status status="PASS" starttime="20230627 03:11:44.114" endtime="20230627 03:11:44.115"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:33.463" endtime="20230627 01:24:35.688"/>
+<status status="PASS" starttime="20230627 03:11:41.957" endtime="20230627 03:11:44.116"/>
 </kw>
-<status status="PASS" starttime="20230627 01:24:17.152" endtime="20230627 01:24:35.689"/>
+<status status="PASS" starttime="20230627 03:11:39.815" endtime="20230627 03:11:44.117"/>
 </test>
 <doc>Desafio Gustavo Alberti Vieira</doc>
-<status status="PASS" starttime="20230627 01:24:16.890" endtime="20230627 01:24:35.692"/>
+<status status="PASS" starttime="20230627 03:11:39.667" endtime="20230627 03:11:44.127"/>
 </suite>
 <statistics>
 <total>
